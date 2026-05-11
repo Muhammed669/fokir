@@ -1,0 +1,553 @@
+/* start nav */
+html,body{
+    scroll-behavior: smooth;
+}
+.color-text{
+    color: #FF305B;
+    font-family:"Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.fokir-nav ul li a{
+    /* background-color: rgb(18, 214, 168); */
+color: white;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 300;
+transition: 1s;
+}
+.fokir-nav ul li a:hover{
+    color: #FF305B;
+    cursor: pointer;
+}
+.fokir-nav ul li .first-list{
+    color: #FF305B;
+}
+/* end nav */
+/* start header */
+#header{
+background:linear-gradient(rgba(0, 0, 0, 0.508)) ,url(../images/slider-02.jpg);
+background-size: cover;
+background-position: center;
+height: 100dvh;
+}
+.header-content h3{
+color: #FFFFFF;
+font-size: 24PX;
+font-family: "Source Sans 3", sans-serif;
+font-weight: 600;
+}
+.header-content h1{
+color: #FF305B;
+text-transform: uppercase;
+font-family: "Source Sans 3", sans-serif;
+font-size: 70PX;
+font-weight: 700;
+}
+.header-content h4{
+    color: #FFFFFF;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+.header-content h4 span::after{
+    content: "";
+    animation: move 5s infinite ;
+}
+@keyframes move{
+    0%{
+        content: "D|";
+    }
+    3%{
+        content: "De|";
+    }
+    6%{
+        content: "Dev|";
+    }
+    9%{
+        content: "Deve|";
+    }
+    12%{
+        content: "Devel|";
+    }
+    15%{
+        content: "Develo|";
+    }
+    18%{
+        content: "Develop|";
+    }
+    21%{
+        content: "Develope|";
+    }
+    24%{
+        content: "Developer |";
+    }
+    27%{
+        content: "Develope|";
+    }
+    30%{
+        content: "Develop|";
+    }
+    33%{
+        content: "Develo|";
+    }
+    36%{
+        content: "Devel|";
+    }
+    39%{
+        content: "Deve|";
+    }
+    42%{
+        content: "Dev|";
+    }
+    45%{
+        content: "De|";
+    }
+    48%{
+        content: "D|";
+    }
+    51%{
+        content: "|";
+    }
+    54%{
+        content: "D|";
+    }
+    57%{
+        content: "De|";
+    }
+    60%{
+        content: "Des|";
+    }
+    63%{
+        content: "Desi|";
+    }
+    66%{
+        content: "Desig|";
+    }
+    69%{
+        content: "Design|";
+    }
+    72%{
+        content: "Designe|";
+    }
+    75%{
+        content: "Designer |";
+    }
+    78%{
+        content: "Designe|";
+    }
+    81%{
+        content: "Design|";
+    }
+    84%{
+        content: "Desig|";
+    }
+    87%{
+        content: "Desi|";
+    }
+    90%{
+        content: "Des|";
+    }
+    93%{
+        content: "De|";
+    }
+    96%{
+        content: "D|";
+    }
+    99%{
+        content: "|";
+    }
+}
+/* end header */
+/* start hello */
+#hello{
+    background-color: #FFFFFF;
+    margin-block: 100px;
+}
+@media(max-width: 992px) {
+    .hello-media{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.box-img{
+    border: 8px solid #555555;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 350px;
+}
+.hello-img{
+    width: 350px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.hello-img img{
+    border-radius: 10px;
+}
+.back-layer{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.layer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.305);
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    transition: all 1s;
+}
+.back-layer:hover .layer-icon{
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.layer-icon a{
+    color: #FFFFFF;
+    transition: all 1s;
+}
+.layer-icon a:hover i{
+    color: #FF305B;
+}
+.hello-content h2 span::before{
+    content: "I";
+    color: #FF305B;
+}
+.hello-content h2{
+    color: #333333;
+font-family:  "Source Sans 3", sans-serif;
+font-size: 34px;
+font-weight: 600;
+text-transform: uppercase;
+}
+.hello-content p{
+    color: #212529;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-right: 50px;
+    margin-block: 20px;
+    position: relative;
+} 
+.hello-content p::after{
+content: "";
+border-bottom: 1px dashed #212529;
+position: absolute;
+bottom: -25px;
+left: 0;
+width: 100%;
+}
+.hello-details ul {
+    list-style: none;
+}
+.hello-details ul li{
+    padding-block: 7px;
+}
+.hello-details ul li span{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600; 
+}
+.hello-btn .btn-color{
+    background-color: #FF305B;
+    border-color: #FF305B;
+    transition: all 1s;
+}
+.hello-btn .btn-color:hover{
+    background-color: #EC2403;
+}
+/* end hello */
+/* start our services  */
+#services{
+    background-color: #F1F1F1;
+    padding-block: 100px;
+}
+.services-title{
+    columns: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    position: relative;
+}
+.services-title .line{
+display: block;
+width: 150px;
+height: 1px;
+background-color: #FF305B;
+margin: 10px auto 0;
+position: relative;
+}
+.services-title .line::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 38px;
+    width: 75px;
+    height: .5px;
+    background-color: #FF305B;
+
+}
+.services-title .line::before{
+        content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 38px;
+    width: 75px;
+    height: 1px;
+    background-color: #FF305B;
+}
+#services i{
+    color: #FF305B;
+    font-size: 36px;
+    padding-bottom: 20px;
+    transition: all 1s;
+}
+#services h3{
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-block: 20px;
+}
+#services p{
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding-inline: 25px;
+    line-height: 25px;
+}
+.services-hover{
+    transition: all 1s;
+}
+.services-hover:hover{
+    background-color: #FFFFFF;
+}
+.services-hover:hover i{
+    transform: scale(1.2);
+}
+/* end our services  */
+/* start our portfolio */
+#portfolio{
+    background-color: #FFFFFF;
+    padding-block: 100px;
+}
+.portfolio-hover .nav-link{
+    color: #212529;
+}
+.portfolio-hover .nav-link.active{
+    color: #FF305B;
+}
+.portfolio-box{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-box .portfolio-layer{
+    background-color: #0000008c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+.portfolio-box .portfolio-layer i{
+    color: #FF305B;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.portfolio-box .portfolio-layer:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.close-space{
+    padding-right: 930px;
+    color: gray;
+}
+.color-title h1{
+    color: #FF305B;
+}
+.color-title i{
+    color: #FF305B;
+}
+.footer-icon i{
+    color: #555555;
+}
+.footer-icon i:hover{
+    color: #FF305B;
+}
+.style{
+    list-style: none;
+    padding: 0;
+}
+.style a{
+    color: #FF305B;
+    text-decoration: none;
+}
+.style a:hover{
+    text-decoration: underline;
+}
+/* end our portfolio */
+/* start details */
+#details{
+    background-color: #F1F1F1;
+    padding-block: 50px;
+}
+#details i{
+    color: #FF305B;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+/* end details */
+/* start clien feedback */
+#client{
+    background-color: #FFFFFF;
+    padding-block: 80px;
+}
+.box-client{
+background: linear-gradient(139deg, #FF305B 22%  , #F1F1F1 22%);
+margin: auto;
+border-radius: 8px;
+}
+.client-img {
+    padding-inline: 20px;
+}
+.client-img img{
+    width: 120px;
+}
+.client-content h3{
+color: #333333;
+font-family: "Source Sans 3", sans-serif;
+font-size: 26px;
+font-weight: 600;
+}
+.client-content h4{
+font-family: "Source Sans 3", sans-serif;
+font-size: 15px;
+}
+.client-content h4 a{
+    color: #777777;
+}
+.client-content > i{
+    color: #F1C30D;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border:  1px solid #FF305B;
+    border-radius: 50%;
+    margin-inline: 5px;
+    margin-top: 20px;
+    background-color: #FF305B;
+}
+.carousel-indicators .active{
+    width: 30px;
+    border: 1px solid #FF305B;
+    border-radius: 10px;
+}
+/* end clien feedback */
+/* start our blog */
+#blog{
+    background-color: #F1F1F1;
+    padding-block: 100px;
+}
+.blog-w{
+width: 90%;
+}
+#blog h5{
+    color: #000000;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 1s;
+}
+#blog a:hover h5{
+    color: #FF305B;
+}
+#blog a {
+    color: #333333;
+    transition: all 1s;
+}
+#blog a:hover{
+    color: #FF305B;
+}
+/* end our blog */
+/* start contact us */
+#contact{
+    background-color: #FFFFFF;
+    padding-block: 100px;
+}
+#contact input{
+    height: 40px;
+}
+#contact button{
+background-color: #FF305B;
+color: #FFFFFF;
+}
+#contact button:hover{
+    background-color: #EC2403;
+}
+/* end contact us */
+/* start footer */
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    margin-bottom: 0;
+    overflow: auto;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding: 10px;
+    display: inline-block;
+}
+footer ul li a{
+    text-decoration: none;
+}
+.fab{
+    font-size: 23px;
+}
+footer p{
+    color: #fff;
+    margin-top: 20px; 
+    font-weight: 500px;
+    font-size: 18px;
+}
+footer p span{
+    color: #FF305B;
+}
+footer p span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fab{
+    color: #fff;
+    transition: all 0.5s;
+}
+.fa-facebook-f:hover{
+  color: #FF305B;
+}
+.fa-google:hover{
+color: #FF305B;
+}
+.fa-twitter:hover{
+color: #FF305B;
+}
+.fa-github:hover{
+color: #FF305B;
+}
+/* end footer */
